@@ -3,7 +3,7 @@ const axios = require('axios')
 const cheerio = require('cheerio')
 const express = require('express')
 
-const  app1 = express()
+const  app = express()
 
 const url = 'https://www.theguardian.com/us'
 
@@ -26,4 +26,4 @@ axios(url)
         console.log(articles)
     }) .catch(err => console.log(err))
 
-app1.listen(PORT, () => console.log(`server running on PORT ${PORT}`))
+app.listen(PORT, () => console.log(`server running on PORT ${PORT}`))
