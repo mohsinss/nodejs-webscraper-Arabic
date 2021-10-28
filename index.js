@@ -5,7 +5,7 @@ const express = require('express')
 
 const  app = express()
 
-const url = 'https://www.aljazeera.net/'
+const url = 'https://www.alarabia.net/'
 
 axios(url)
     .then(response => {
