@@ -13,7 +13,7 @@ axios(url)
         const $ = cheerio.load(html)
         const articles = []
 
-        $('.sectionHero_latest', html).each(function() {
+        $('.list-item swiper-slide', html).each(function() {
             const title = $(this).text()
             const url = $(this).find('a').attr('href')
             articles.push({
