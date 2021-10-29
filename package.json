@@ -1,24 +1,17 @@
 {
-  "name": "nodejs-webscraper-oct2021",
+  "name": "web-scraper",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mohsinss/nodejs-webscraper-Oct2021.git"
-  },
-  "author": "Mohsin Alshammari",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mohsinss/nodejs-webscraper-Oct2021/issues"
-  },
-  "homepage": "https://github.com/mohsinss/nodejs-webscraper-Oct2021#readme",
   "dependencies": {
-    "axios": "^0.23.0",
+    "axios": "^0.21.4",
     "cheerio": "^1.0.0-rc.10",
+    "cors": "^2.8.5",
     "express": "^4.17.1"
   }
 }
