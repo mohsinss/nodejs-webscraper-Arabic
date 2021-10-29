@@ -5,7 +5,13 @@ const express = require('express')
 
 const  app = express()
 
-const url = 'https://www.Aljazeera.net/'
+const url = 'https://www.Aljazeera.net/' 
+
+/*The guardian.com/en : . '.fc-item__title'
+Aljazeera English '.fte-article__title'
+Aljazeera Arabic '.article-card__title'
+Al Arabiya Arabic
+*/
 
 axios(url)
     .then(response => {
