@@ -19,7 +19,7 @@ app.get('/results', (req, res) => {
             const $ = cheerio.load(html)
             const articles = []
 
-            $('.gnt_m_lb_i', html).each(function () { //<-- cannot be a function expression
+            $('.gnt_pr', html).each(function () { //<-- cannot be a function expression
                 const title = $(this).text()
                 const url = $(this).find('a').attr('href')
                 articles.push({
