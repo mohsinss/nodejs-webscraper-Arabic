@@ -6,7 +6,7 @@ const app = express()
 const cors = require('cors')
 app.use(cors())
 
-const url = 'https://news.ycombinator.com/'
+const url = 'https://www.rgj.com/'
 
 app.get('/', function (req, res) {
     res.json('This is my webscraper')
@@ -19,7 +19,7 @@ app.get('/results', (req, res) => {
             const $ = cheerio.load(html)
             const articles = []
 
-            $('.titlelink', html).each(function () { //<-- cannot be a function expression
+            $('.gnt_sbt gnt_sbt__ms gnt_sbt__ts', html).each(function () { //<-- cannot be a function expression
                 const title = $(this).text()
                 const url = $(this).find('a').attr('href')
                 articles.push({
